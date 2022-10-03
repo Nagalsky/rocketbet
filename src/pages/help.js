@@ -10,7 +10,7 @@ export default function Help() {
       </Head>
 
       <main>
-        <section class="py-6">
+        <section className="py-6">
           <div className="container">
             <h1 className="font-heading text-2xl">Im a help page</h1>
           </div>

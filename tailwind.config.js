@@ -14,7 +14,7 @@ module.exports = {
       sans: bodyFontFamily,
       heading: headingFontFamily,
       medium: mediumFontFamily,
-      "semi-bold": semiBoldFontFamily,
+      semibold: semiBoldFontFamily,
       medium: mediumFontFamily,
     },
     container: {
