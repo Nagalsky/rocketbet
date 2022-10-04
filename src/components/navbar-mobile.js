@@ -89,7 +89,7 @@ export default function NavbarMobile({ closeMenu, ...restProps }) {
   return (
     <>
       <div
-        className="fixed left-0 top-0 h-full bg-dark-400 w-full z-50"
+        className="fixed left-0 top-0 h-full bg-dark-400 w-full z-50 md:hidden"
         {...restProps}
       >
         <Header />
