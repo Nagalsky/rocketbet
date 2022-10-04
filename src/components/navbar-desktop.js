@@ -89,7 +89,7 @@ export default function NavbarDesktop({ ...restProps }) {
 
   const { getItem, setItem } = useStorage();
 
-  const [isNavbarOpened, setIsNavbarOpened] = useState(false);
+  const [isNavbarOpened, setIsNavbarOpened] = useState(true);
 
   const toggleNavbar = () => {
     setItem("navbar-opened", !isNavbarOpened);
