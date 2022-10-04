@@ -16,6 +16,7 @@ import {
 import { useRouter } from "next/router";
 import SimpleBar from "simplebar-react";
 import Header from "./header";
+import useLockBodyScroll from "../hooks/use-lock-body-scroll";
 import "simplebar-react/dist/simplebar.min.css";
 
 const navArray = [
@@ -83,6 +84,7 @@ const secondNavArray = [
 
 export default function NavbarMobile({ closeMenu, ...restProps }) {
   const router = useRouter();
+  useLockBodyScroll();
 
   return (
     <>
@@ -110,8 +112,8 @@ export default function NavbarMobile({ closeMenu, ...restProps }) {
           </button>
         </div>
 
-        <SimpleBar style={{ maxHeight: "calc(100vh - 300px)", width: "100%" }}>
-          <div className="space-y-4">
+        <SimpleBar style={{ maxHeight: "calc(100vh - 160px)", width: "100%" }}>
+          <div className="space-y-4 overflow-auto pb-[60px]">
             <nav className="flex flex-col gap-1">
               {navArray.map((item, index) => {
                 return (

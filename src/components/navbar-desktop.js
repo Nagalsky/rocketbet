@@ -18,7 +18,7 @@ import {
 } from "../lib/icons";
 import { useRouter } from "next/router";
 import SimpleBar from "simplebar-react";
-import useStorage from "../hooks/useStorage";
+import useStorage from "../hooks/use-storage";
 import "simplebar-react/dist/simplebar.min.css";
 
 const navArray = [

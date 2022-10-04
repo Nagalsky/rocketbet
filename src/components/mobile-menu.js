@@ -1,18 +1,14 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Search, MenuBurger, Wallet, Casino, Chat } from "../lib/icons";
 import NavbarMobile from "./navbar-mobile";
-import { lock, unlock } from "tua-body-scroll-lock";
 
 export default function MobileMenu({ ...restProps }) {
-  const scrollLockRef = useRef(null);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const openMenu = () => {
     setIsOpenMenu(true);
-    lock(scrollLockRef);
   };
   const closeMenu = () => {
     setIsOpenMenu(false);
-    unlock(scrollLockRef);
   };
 
   return (
