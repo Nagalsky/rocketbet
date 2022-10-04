@@ -110,7 +110,7 @@ export default function NavbarMobile({ closeMenu, ...restProps }) {
           </button>
         </div>
 
-        <SimpleBar style={{ maxHeight: "calc(100vh - 200px)", width: "100%" }}>
+        <SimpleBar style={{ maxHeight: "calc(100vh - 300px)", width: "100%" }}>
           <div className="space-y-4">
             <nav className="flex flex-col gap-1">
               {navArray.map((item, index) => {
