@@ -1,6 +1,4 @@
 const useStorage = () => {
-  const storageType = (type) => `${type ?? "session"}Storage`;
-
   const isBrowser = (() => typeof window !== "undefined")();
 
   const getItem = (key) => {
