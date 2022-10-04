@@ -20,7 +20,7 @@ export default function MobileMenu({ ...restProps }) {
       {isOpenMenu && <NavbarMobile closeMenu={closeMenu} />}
 
       <div
-        className="sticky left-0 bottom-0 z-50 px-4 py-[10px] bg-dark-400 grid grid-cols-5 gap-8 md:hidden"
+        className="sticky left-0 bottom-0 z-30 px-4 py-[10px] bg-dark-400 grid grid-cols-5 gap-8 md:hidden"
         {...restProps}
       >
         <button
