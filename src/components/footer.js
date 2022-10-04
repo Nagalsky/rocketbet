@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "../components/logo";
+import Logo from "./logo";
 import Image from "next/image";
 import { Telegram, FaceBook, Twitter, Instagram } from "../lib/icons";
 
@@ -25,7 +25,7 @@ const socialNetworks = [
 export default function Footer({ ...restProps }) {
   return (
     <footer className="py-4 md:py-10 bg-dark-400 text-dark-300" {...restProps}>
-      <div className="container">
+      <div className="container mx-auto max-w-[1330px]">
         <Logo className="w-[178px] mb-4" />
 
         <p className="mb-8 md:mb-11">

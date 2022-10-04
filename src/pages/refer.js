@@ -11,7 +11,7 @@ export default function Refer() {
 
       <main>
         <section className="py-6">
-          <div className="container">
+          <div className="container mx-auto max-w-[1330px]">
             <h1 className="font-heading text-2xl">Im a refer page</h1>
           </div>
         </section>

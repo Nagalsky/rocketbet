@@ -15,7 +15,6 @@ module.exports = {
       heading: headingFontFamily,
       medium: mediumFontFamily,
       semibold: semiBoldFontFamily,
-      medium: mediumFontFamily,
     },
     container: {
       center: true,
@@ -29,6 +28,7 @@ module.exports = {
       lg: "999px",
       xl: "1230px",
       "2xl": "1330px",
+      "3xl": "1920px",
     },
     extend: {
       colors: {

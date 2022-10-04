@@ -35,3 +35,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.simplebar-track.simplebar-vertical {
+    @apply md:-right-[20px];
+}
+.simplebar-track .simplebar-scrollbar:before {
+    @apply bg-green-500;
+}

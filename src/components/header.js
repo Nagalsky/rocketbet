@@ -5,8 +5,8 @@ import { Key } from "../lib/icons";
 export default function Header({ ...restProps }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
-    <header className="py-4 md:py-6 bg-dark-400" {...restProps}>
-      <div className="container flex items-center justify-between gap-2">
+    <header className="py-[17.5px] md:py-6 bg-dark-400" {...restProps}>
+      <div className="container flex items-center justify-between gap-2 mx-auto max-w-[1330px]">
         <Logo className="w-[128px] md:hidden" />
 
         {!isLoggedIn ? (
