@@ -105,7 +105,10 @@ export default function NavbarDesktop({ ...restProps }) {
   };
 
   useEffect(
-    () => setIsNavbarOpened(JSON.parse(getItem("navbar-opened"))),
+    () =>
+      setIsNavbarOpened(
+        getItem("navbar-opened") ? JSON.parse(getItem("navbar-opened")) : true
+      ),
     [isNavbarOpened, getItem]
   );
 
