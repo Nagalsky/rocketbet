@@ -96,10 +96,6 @@ export default function NavbarDesktop({ ...restProps }) {
     setItem("navbar-opened", !isNavbarOpened);
     setIsNavbarOpened((val) => !val);
   };
-  const openeNavbar = () => {
-    setItem("navbar-opened", true);
-    setIsNavbarOpened(true);
-  };
   const closeNavbar = () => {
     setItem("navbar-opened", false);
     setIsNavbarOpened(false);
