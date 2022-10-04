@@ -120,7 +120,6 @@ export default function NavbarDesktop({ ...restProps }) {
         className={`fixed h-full xl:h-auto xl:relative 3xl:fixed top-0 left-0 z-50 px-[20px] py-[30px] bg-dark-400 rounded-br-2xl flex-shrink-0 hidden md:block self-stretch 3xl:self-start ${
           isNavbarOpened ? "md:w-[285px]" : "md:w-[84px]"
         }`}
-        onClick={() => !isNavbarOpened && openeNavbar()}
         {...restProps}
       >
         <div className="flex items-center gap-5 mb-14">
