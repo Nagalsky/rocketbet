@@ -86,6 +86,7 @@ const secondNavArray = [
 
 export default function NavbarDesktop({ ...restProps }) {
   const router = useRouter();
+  const [mounted, setMounted] = useState(false);
 
   const { getItem, setItem } = useStorage();
 
@@ -104,13 +105,14 @@ export default function NavbarDesktop({ ...restProps }) {
     setIsNavbarOpened(false);
   };
 
-  useEffect(
-    () =>
-      setIsNavbarOpened(
-        getItem("navbar-opened") ? JSON.parse(getItem("navbar-opened")) : true
-      ),
-    [isNavbarOpened, getItem]
-  );
+  useEffect(() => {
+    setIsNavbarOpened(
+      getItem("navbar-opened") ? JSON.parse(getItem("navbar-opened")) : true
+    ),
+      setMounted(true);
+  }, [(isNavbarOpened, getItem)]);
+
+  if (!mounted) return null;
 
   return (
     <>
