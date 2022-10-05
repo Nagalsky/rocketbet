@@ -3,7 +3,7 @@ import {
   MenuClose,
   Search,
   Home,
-  AllGames,
+  Games,
   TopPicks,
   Slot,
   BlackJack,
@@ -28,7 +28,7 @@ const navArray = [
   {
     path: "/all-games",
     title: "All games",
-    icon: <AllGames className="flex-shrink-0 w-6 h-6" />,
+    icon: <Games className="flex-shrink-0 w-6 h-6" />,
   },
   {
     path: "/top-picks",
